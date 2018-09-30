@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript_Add</title>
+</head>
+<body>
+	<script>
+		var name = prompt('Как вас зовут?');
+		var age = prompt('Сколько вам лет?');
+
+    if (age > 17) {
+    	var distr = confirm('Вы подписаны на рассылку?');
+    	if (distr == true) {
+    		True();
+    	} else {
+    		False();
+    	}
+    } else {
+    		False();
+    	}
+        //функция запрета
+    function False(){
+    	alert('Вход на сайт запрещен так как вам не исполнилось 18лет!');
+    	console.log('пользователь ' + name + " не допущен на сайт")
+    }
+    //если вход разрешен
+    function True() {
+    	alert(name + '! Вход на сайт разрешен! ');
+    	console.log('пользователь - ' + name + ' допущен на сайт');
+    }
+	</script>
+	
+</body>
+</html>
